@@ -1,0 +1,10 @@
+<h2>Trainer: {{trainerName}}</h2>
+
+<p>My pokemon: {{myPokemon?.name}}</p>
+<p>Published pokemon: {{$publishedPokemon | async}}</p>
+<form>
+  <button (click)="publishPokemon()">Publish a random pokemon</button>
+  <button (click)="setNewPokemon()">Get another pokemon</button>
+</form>
+<img src="{{ myPokemon?.urlImg }}" alt="poke">
+<hr>
